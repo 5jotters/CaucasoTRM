@@ -1,0 +1,10 @@
+settings=
+{
+	["dials"]=
+	{
+		["mode_dial"]=0,
+		["volume"]=0.99603271484375,
+		["squelch_mode"]=1,
+		["manual_frequency"]=30000000,
+	},
+}
