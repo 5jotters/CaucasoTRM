@@ -6,68 +6,67 @@
 local Tanker=true
 local Awacs=true
 local Helo=true
-local Traffic=false -- No IA traffic
+local Traffic=false -- Quitar tráfico AI
 
 -- Set mission menu.
-AIRBOSS.MenuF10Root=MENU_MISSION:New("Airboss").MenuPath
+AIRBOSS.MenuF10Root=MENU_MISSION:New("Airboss").MenuPath  -- Si no se pone, sigue apareciendo el menú Airboss ??
 
 -- No MOOSE settings menu.
 _SETTINGS:SetPlayerMenuOff()
 
 -- S-3B Recovery Tanker spawning in air.
-local stennis_tanker=nil  --Ops.RecoveryTanker#RECOVERYTANKER
+local tanker_stennis=nil  --Ops.RecoveryTanker#RECOVERYTANKER
 if Tanker then
-  stennis_tanker=RECOVERYTANKER:New("USS Stennis", "Texaco Group")
-  stennis_tanker:SetTakeoffAir()
-  stennis_tanker:SetAltitude(6000) -- Valor por defecto 6000
-  stennis_tanker:SetRadio(149)
-  stennis_tanker:SetModex(511)
-  stennis_tanker:SetTACAN(40, "S-3")
-  stennis_tanker:SetSpeed(350)  
---  stennis_tanker:SetHomeBase(AIRBASE.Caucasus.Kobuleti)  -- Si queremos que NO tome en CVN Stennis
-  stennis_tanker:Start()
+  tanker_stennis=RECOVERYTANKER:New("USS Stennis", "Texaco Group")
+  tanker_stennis:SetTakeoffAir()
+  tanker_stennis:SetRadio(242)
+  tanker_stennis:SetModex(511)
+  tanker_stennis:SetTACAN(40, "S-3")
+  tanker_stennis:SetAltitude(8000)
+  tanker_stennis:SetSpeed(350)
+  tanker_stennis:Start()
 end
 
 -- E-2D AWACS spawning in air
-local stennis_awacs=nil  --Ops.RecoveryTanker#RECOVERYTANKER
+local awacs_stennis=nil  --Ops.RecoveryTanker#RECOVERYTANKER
 if Awacs then
-  stennis_awacs=RECOVERYTANKER:New("USS Stennis", "E-2D Wizard Group")
-  stennis_awacs:SetAWACS()
-  stennis_awacs:SetTakeoffAir()
-  stennis_awacs:SetRadio(237)
-  stennis_awacs:SetAltitude(20000)
-  stennis_awacs:SetCallsign(CALLSIGN.AWACS.Wizard)
-  stennis_awacs:SetRacetrackDistances(30, 15)
-  stennis_awacs:SetModex(611)
-  stennis_awacs:SetTACAN(50, "WIZ")
-  stennis_awacs:__Start(1)
+  awacs_stennis=RECOVERYTANKER:New("USS Stennis", "E-2D Wizard Group")
+  awacs_stennis:SetAWACS()
+  awacs_stennis:SetTakeoffAir()
+  awacs_stennis:SetRadio(237)
+  awacs_stennis:SetAltitude(20000)
+  awacs_stennis:SetCallsign(CALLSIGN.AWACS.Wizard)
+  awacs_stennis:SetRacetrackDistances(30, 15)
+  awacs_stennis:SetModex(611)
+  awacs_stennis:SetTACAN(50, "WIZ")
+  awacs_stennis:__Start(1)
 end
 
 -- Rescue Helo spawned in air with home base USS Perry.
+local rescuehelo_stennis = nil   --Ops.Rescuelo#RESCUEHELO
 if Helo then
   -- Has to be a global object!
-  rescuehelo=RESCUEHELO:New("USS Stennis", "Rescue Helo")
-  rescuehelo:SetHomeBase(AIRBASE:FindByName("Perry"))
-  -- rescuehelo:SetTakeoffAir()
-  rescuehelo:SetTakeoffHot() -- Esta es la opción por defecto en realidad
-  rescuelo:SetRespawnInAir() -- Los siguients respawn en el aire
-  rescuehelo:SetModex(42)
-  rescuehelo:Start()
+  rescuehelo_stennis=RESCUEHELO:New("USS Stennis", "Rescue Helo")
+  rescuehelo_stennis:SetHomeBase(AIRBASE:FindByName("Perry"))
+  rescuehelo_stennis:SetTakeoffAir()
+  rescuehelo_stennis:SetModex(42)
+  rescuehelo_stennis:Start()
 end
   
 -- Create AIRBOSS object.
 local AirbossStennis=AIRBOSS:New("USS Stennis")
+AirbossStennis:SetMenuSingleCarrier()
 
 -- Add recovery windows:
--- Case I from 9 to 11 am.
-local window1=AirbossStennis:AddRecoveryWindow( "9:00", "11:00", 1, nil, true, 25)
--- Case II with +15 degrees holding offset from 15:00 for 120 min.
-local window2=AirbossStennis:AddRecoveryWindow("15:00", "17:00", 2,  15, true, 23)
--- Case III with +30 degrees holding offset from 2100 to 2300.
-local window3=AirbossStennis:AddRecoveryWindow("21:00", "23:00", 3,  30, true, 21)
+-- Case I from 9 to 10 am.
+local window1=AirbossStennis:AddRecoveryWindow( "9:00", "10:00", 1, nil, true, 25)
+-- Case II with +15 degrees holding offset from 15:00 for 60 min.
+local window2=AirbossStennis:AddRecoveryWindow("15:00", "16:00", 2,  15, true, 23)
+-- Case III with +30 degrees holding offset from 2100 to 2200.
+local window3=AirbossStennis:AddRecoveryWindow("21:00", "22:00", 3,  30, true, 21)
 
 -- Radio relay units.
-AirbossStennis:SetRadioRelayLSO(rescuehelo:GetUnitName())
+AirbossStennis:SetRadioRelayLSO(rescuehelo_stennis:GetUnitName())
 AirbossStennis:SetRadioRelayMarshal("Huey Radio Sender")
 
 -- Set folder of airboss sound files within miz file.
@@ -97,7 +96,7 @@ AirbossStennis:SetTrapSheet()
 
   -- Set recovery tanker.
 if Tanker then
-  AirbossStennis:SetRecoveryTanker(stennis_tanker)
+  AirbossStennis:SetRecoveryTanker(tanker)
 end
 
 -- Start airboss class.
