@@ -22,8 +22,8 @@ if Tanker then
   tanker_stennis:SetRadio(242)
   tanker_stennis:SetModex(511)
   tanker_stennis:SetTACAN(40, "S-3")
-  tanker_stennis:SetAltitude(8000)
-  tanker_stennis:SetSpeed(350)
+  tanker_stennis:SetAltitude(6000)
+  tanker_stennis:SetSpeed(300)
   tanker_stennis:Start()
 end
 
