@@ -55,49 +55,49 @@ end
   
 -- Create AIRBOSS object.
 local AirbossStennis=AIRBOSS:New("USS Stennis")
+
+-- Single carrier menu optimization.
 AirbossStennis:SetMenuSingleCarrier()
 
--- Add recovery windows:
--- Case I from 9 to 10 am.
-local window1=AirbossStennis:AddRecoveryWindow( "9:00", "10:00", 1, nil, true, 25)
--- Case II with +15 degrees holding offset from 15:00 for 60 min.
-local window2=AirbossStennis:AddRecoveryWindow("15:00", "16:00", 2,  15, true, 23)
--- Case III with +30 degrees holding offset from 2100 to 2200.
-local window3=AirbossStennis:AddRecoveryWindow("21:00", "22:00", 3,  30, true, 21)
-
+-- Set Radio Freqs/NAVAIDs
+AirbossStennis:SetICLS(1,'CVN')
+AirbossStennis:SetTACAN(74,X,'CVN')
+AirbossStennis:SetMarshalRadio(305)
+AirbossStennis:SetLSORadio(264)
 -- Radio relay units.
 AirbossStennis:SetRadioRelayLSO(rescuehelo_stennis:GetUnitName())
 AirbossStennis:SetRadioRelayMarshal("Huey Radio Sender")
 
+-- Set recovery tanker.
+if Tanker then
+  AirbossStennis:SetRecoveryTanker(tanker_stennis)
+end
+
 -- Set folder of airboss sound files within miz file.
 AirbossStennis:SetSoundfilesFolder("Airboss Soundfiles/")
 
--- Single carrier menu optimization.
-AirbossStennis:SetMenuSingleCarrier()
- 
+-- Add recovery windows:
+-- Case I from 9 to 13 am.
+local window1=AirbossStennis:AddRecoveryWindow( "9:00", "13:00", 1, nil, true, 25)
+-- Case II with +15 degrees holding offset from 15:00 for 180 min.
+local window2=AirbossStennis:AddRecoveryWindow("15:00", "20:00", 2,  15, true, 23)
+-- Case III with +30 degrees holding offset from 2100 to 2300.
+local window3=AirbossStennis:AddRecoveryWindow("21:00", "23:00", 3,  30, true, 21)
+
 -- AI groups explicitly excluded from handling by the Airboss
 local CarrierExcludeSet=SET_GROUP:New():FilterPrefixes("E-2D Wizard Group"):FilterStart()
 AirbossStennis:SetExcludeAI(CarrierExcludeSet)
 
--- Let AI refuel when they are low on gas.
---AirbossStennis:SetRefuelAI(20)
- 
 -- Remove landed AI planes from flight deck.
 AirbossStennis:SetDespawnOnEngineShutdown()
 
+-- Greenie board:
 -- Load all saved player grades from your "Saved Games\DCS" folder (if lfs was desanitized).
 AirbossStennis:Load()
-
 -- Automatically save player results to your "Saved Games\DCS" folder each time a player get a final grade from the LSO.
 AirbossStennis:SetAutoSave()
-
 -- Enable trap sheet.
 AirbossStennis:SetTrapSheet()
-
-  -- Set recovery tanker.
-if Tanker then
-  AirbossStennis:SetRecoveryTanker(tanker)
-end
 
 -- Start airboss class.
 AirbossStennis:Start()
