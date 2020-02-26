@@ -1,8 +1,0 @@
-mapResource = 
-{
-    ["ResKey_Action_292"] = "Moose.lua",
-    ["ResKey_Action_319"] = "RED_CAP.lua",
-    ["ResKey_Action_802"] = "AWACS.lua",
-    ["ResKey_Action_751"] = "Tankers.lua",
-    ["ResKey_Action_462"] = "airboss.lua",
-} -- end of mapResource
