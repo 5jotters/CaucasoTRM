@@ -9,7 +9,7 @@ atisTbilisi:Start()
 
 -- ATIS Kutaisi Airport en 134.800 MHz AM.
 atisKutaisi=ATIS:New(AIRBASE.Caucasus.Kutaisi, 134.800)
-atisKutaisi:SetRadioRelayUnitName("Radio Relay Batumi")
+atisKutaisi:SetRadioRelayUnitName("Radio Relay Kutaisi")
 atisKutaisi:SetTowerFrequencies({263.000, 134.000})
 atisKutaisi:SetActiveRunway("26")
 atisKutaisi:SetTACAN(44)
