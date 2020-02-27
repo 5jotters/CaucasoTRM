@@ -22,9 +22,9 @@ _SETTINGS:SetPlayerMenuOff()
 -- S-3B Recovery Tanker spawning in air.
 local tanker=RECOVERYTANKER:New("USS Stennis", "Texaco Group")
 tanker:SetTakeoffAir()
-tanker:SetRadio(250)
+tanker:SetRadio(254)
 tanker:SetModex(511)
-tanker:SetTACAN(3, "TKR")
+tanker:SetTACAN(4, "TKR")
 tanker:__Start(1)
 
 -- E-2D AWACS spawning on Stennis.

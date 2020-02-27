@@ -9,10 +9,22 @@ BFM contra Su27 y Mig29 IA.
 ##  ESCENARIO DE ENTRENAMIENTO CARRIER OPS
 - CVN Stennis y Tarawa frente a la costa de Kobuleti.
 - Aviones: 4xF18 + 4xF14
-- AIRBOSS:  cisterna s3-b disponible en 250Mhz, TCN 3Y, alt 6000', 300 TAS
+- AIRBOSS:  cisterna s3-b disponible en 254Mhz, TCN 4Y, alt 6000', 300 TAS
 - MOA NORTE BATUMI, MOA SUR BATUMI en plan vuelo F18s.
 - Weather, BRC, freqs, ventanas: Menú AIRBOSS-->kneeboard.
 - POLÍGONO REAL DE TIRO aL SUR KOBULETI: T80s, BTRs, ZSUs, URAL y estáticos. Coord: N 41º 50' 31", E 41º 47' 52" 
+- COMM PLAN: 
+  - Tbilisi-Lochini:    ATC: 138.0 / 267.0. ATIS:138.8  NAV: TACAN GTB 25X / VOR TB 113.7
+  - Kobuleti:    ATC: 133.0 / 262.0.  NAV: TACAN KBL 67X
+  - Batumi:    ATC: 131.0 / 260.0.   NAV: TACAN BTM 16X
+  - Kutaisi:  ATC: 138.0 / 263.0.  ATIS: 134.8  NAV: TACAN KTS 44X / VOR KT 113.6
+
+- SUPPORT:
+  - AWACS / MAGIC/ Freq 305.000 / TCN:
+  - Tanker / KC-135MPRS / 20000 ft / ARCO / Freq 251.000 / TCN 1X/ MACH 0.6 / NORTE SENAKI
+  - Tanker / KC135MPRS / 22000 ft / SHELL / Freq 252.000 / TCN 2X/ MACH 0.6 / NORTE SENAKI
+  - Tanker / KC-135 / 15000 ft /TEXACO / Freq 253.000 / TCN 3X/ MACH 0.5 / KUTAISI
+
 
 ## ESCENARIO REAL  OPERACION TORMENTA DE HIELO DESDE TBILISI-LOCHINI. 
  
@@ -37,18 +49,19 @@ BFM contra Su27 y Mig29 IA.
 
 - MISSION COMMANDER: Pontiac
 
-- WX: 20004KT 380 FG BKN045 M10.099999904633 Q1013 RMK RED=
+- WX: 20004KT 380 FG BKN045 M10.099999904633 Q30.10 RMK RED=
 
 - COMM PLAN: 
-  - Tbilisi-Lochini:    ATC: 138.0 / 267.0.   NAV: TACAN GTB 25X / VOR TB 113.7
-  - Kobuleti:    ATC: 133.0 / 262.0.   NAV: TACAN KBL 67X
+  - Tbilisi-Lochini:    ATC: 138.0 / 267.0. ATIS:138.8  NAV: TACAN GTB 25X / VOR TB 113.7
+  - Kobuleti:    ATC: 133.0 / 262.0.  NAV: TACAN KBL 67X
   - Batumi:    ATC: 131.0 / 260.0.   NAV: TACAN BTM 16X
-
+  - Kutaisi:  ATC: 138.0 / 263.0.  ATIS: 134.8  NAV: TACAN KTS 44X / VOR KT 113.6
+  
 - SUPPORT:
   - AWACS / MAGIC/ Freq 305.000 / TCN:
-  - Tanker / KC-135MPRS / 20000 ft / ARCO / Freq 268.000 / TCN:39Y/ MACH 0.6 / NORTE SENAKI
-  - Tanker / KC135MPRS / 22000 ft / SHELL / Freq 269.000 / TCN:40Y/ MACH 0.6 / NORTE SENAKI
-  - Tanker / KC-135 / 15000 ft /TEXACO / Freq 251.000 / TCN:41Y/ MACH 0.5 / KUTAISI
+  - Tanker / KC-135MPRS / 20000 ft / ARCO / Freq 251.000 / TCN 1X/ MACH 0.6 / NORTE SENAKI
+  - Tanker / KC135MPRS / 22000 ft / SHELL / Freq 252.000 / TCN 2X/ MACH 0.6 / NORTE SENAKI
+  - Tanker / KC-135 / 15000 ft /TEXACO / Freq 253.000 / TCN 3X/ MACH 0.5 / KUTAISI
 
 - RAMROD: MONKEYSPIT
 
