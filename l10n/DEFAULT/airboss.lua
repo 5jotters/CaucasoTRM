@@ -55,9 +55,6 @@ local window2=AirbossStennis:AddRecoveryWindow("14:00", "16:00", 2,  15, true, 2
 -- Case III with +30 degrees holding offset from 2100 to 2200.
 local window3=AirbossStennis:AddRecoveryWindow("21:00", "23:00", 3,  30, true, 21)
 
--- Set TACAN (default 74X)
-AirbossStennis:SetTACAN(74, "X", "STN")
-
 -- Set folder of airboss sound files within miz file.
 AirbossStennis:SetSoundfilesFolder("Airboss Soundfiles/")
 
