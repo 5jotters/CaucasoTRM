@@ -14,11 +14,13 @@ BFM contra Su27 y Mig29 IA.
 - Weather, BRC, freqs, ventanas: Menú AIRBOSS-->kneeboard.
 - POLÍGONO REAL DE TIRO aL SUR KOBULETI: T80s, BTRs, ZSUs, URAL y estáticos. Coord: N 41º 50' 31", E 41º 47' 52" 
 - COMM PLAN: 
-  - Tbilisi-Lochini:    ATC: 138.0 / 267.0. ATIS:132.8  NAV: TACAN GTB 25X / VOR TB 113.7
-  - Kobuleti:    ATC: 133.0 / 262.0.  NAV: TACAN KBL 67X
-  - Batumi:    ATC: 131.0 / 260.0.   NAV: TACAN BTM 16X
-  - Kutaisi:  ATC: 138.0 / 263.0.  ATIS: 134.8  NAV: TACAN KTS 44X / VOR KT 113.6
-
+  - Batumi:          ATC: 131.0/260.0,  ATIS: 132.800,  NAV: TACAN BTM 16X
+  - Kobuleti:        ATC: 133.0/262.0,  ATIS: 122.300,  NAV: TACAN KBL 67X
+  - Kutaisi:         ATC: 138.0/263.0,  ATIS: 122.100,  NAV: TACAN KTS 44X
+  - Senaki_Kolkhi:   ATC: 132.0/261.0,  ATIS: 122.525,  NAV: TACAN TSK 31X
+  - Tbilisi-Lochini: ATC: 138.0/267.0,  ATIS: 132.800,  NAV: TACAN GTB 25X
+  - Vaziani:         ATC: 140.0/269.0,  ATIS: 122.700,  NAV: TACAN VAS 22X
+  
 - SUPPORT:
   - AWACS / MAGIC/ Freq 305.000 / TCN:
   - Tanker / KC-135MPRS / 20000 ft / ARCO / Freq 251.000 / TCN 1X/ MACH 0.6 / NORTE SENAKI
