@@ -24,3 +24,30 @@ function awacs1spawn()
     end):Spawn()
 end
 awacs1spawn()
+
+awacs2 = SPAWN:New("OVERLORD")
+function awacs2spawn()
+  awacs2:OnSpawnGroup(
+    function (awacs2_group)
+      awacs2_unit_fuel_scheduler = SCHEDULER:New(nil,function ()
+        awacs2_unit = awacs2_group:GetUnit(1)
+        if awacs2_unit
+        then
+          awacs2_unit_fuel = awacs2_unit:GetFuel()
+          if awacs2_unit_fuel <= 0.3
+          then
+            awacs2_group:ClearTasks()
+            awacs2_unit_fuel_scheduler:Stop()
+            env.info(awacs2_group:GetName().." is low on fuel and RTBing")
+            awacs2spawn()
+          end
+        else
+          awacs2_unit_fuel_scheduler:Stop()
+          awacs2spawn()
+        end
+      end
+      ,{},5,300)
+    end):Spawn()
+end
+awacs2spawn()
+
