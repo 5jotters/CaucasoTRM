@@ -10,7 +10,7 @@ BFM contra Su27
 - Posición: en la frontera rusa de Sochi.
 
 ##  ESCENARIO DE ENTRENAMIENTO CARRIER OPS
-- CVN -71 Theodore Roosvelt: TCN 74X / 125.5 AM / ICLS 12 / BRC 334/154
+- CVN -71 Theodore Roosvelt: TCN 74X / 127.5 AM / ICLS 12 / BRC 334/154
 - Tarawa frente a la costa de Kobuleti: TCN 77X /128.5 AM
 - Aviones: 8xF18 + 4xF14
 - ~~AIRBOSS:  cisterna s3-b disponible en 254Mhz, TCN 4Y, alt 6000', 300 TAS~~
