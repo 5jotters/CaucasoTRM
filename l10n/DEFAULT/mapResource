@@ -1,7 +1,8 @@
 mapResource = 
 {
+    ["ResKey_Action_292"] = "Moose.lua",
     ["ResKey_Action_1180"] = "Missile Trainer_cr1.lua",
     ["ResKey_Action_319"] = "RED_CAP.lua",
+    ["ResKey_ImageBriefing_1233"] = "CaucasoTRM.jpg",
     ["ResKey_Action_1175"] = "furball.lua",
-    ["ResKey_Action_292"] = "Moose.lua",
 } -- end of mapResource
