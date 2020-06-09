@@ -10,7 +10,7 @@ BFM contra Su27
 - Posición: en la frontera rusa de Sochi.
 
 ##  ESCENARIO DE ENTRENAMIENTO CARRIER OPS
-- CVN -71 Theodore Roosvelt: TCN 74X / 125.5 AM / ICLS 12 / BRC 334/154
+- CVN -71 Theodore Roosvelt: TCN 74X / 127.5 AM / ICLS 12 / BRC 334/154
 - Tarawa frente a la costa de Kobuleti: TCN 77X /128.5 AM
 - Aviones: 8xF18 + 4xF14
 - ~~AIRBOSS:  cisterna s3-b disponible en 254Mhz, TCN 4Y, alt 6000', 300 TAS~~
@@ -24,19 +24,24 @@ BFM contra Su27
   - Senaki_Kolkhi:   ATC: 132.0/261.0,  ATIS: 122.525,  NAV: TACAN TSK 31X
   - Tbilisi-Lochini: ATC: 138.0/267.0,  ATIS: 132.800,  NAV: TACAN GTB 25X
   - Vaziani:         ATC: 140.0/269.0,  ATIS: 122.700,  NAV: TACAN VAS 22X
+  - Sukhumi:         ATC: 129.0/258.0
   
 - SUPPORT:
   - AWACS / MAGIC/ Freq 305.600 / Central Black Sea
   - AWACS / OVERLORD/ Freq 270.1 / West-Georgia
   - Tanker / KC-135 / 15000 ft / ARCO / Freq 269.800 / TCN 13X/ MACH 0.6 / NORTE SENAKI
-  - Tanker / KC135MPRS / 22000 ft / SHELL / Freq 360.8.000 / TCN 45X/ MACH 0.6 / NORTE SENAKI
-  - Tanker / KC-135MPRS / 20000 ft /TEXACO / Freq 265.000 / TCN 11X/ MACH 0.5 / KUTAISI
+  - Tanker / KC135MPRS / 22000 ft / SHELL / Freq 267.000 / TCN 45X/ MACH 0.6 / SUR SENAKI
+  - Tanker / KC-135MPRS / 20000 ft /TEXACO / Freq 268.000 / TCN 11X/ MACH 0.5 / KUTAISI
 
+##  ESCENARIO DE ENTRENAMIENTO SEAD
+- AÑADIDO POLÍGONO DE ENTRENAMIENTO SEAD EN TURQUÍA:
+  - SA2 (WPT GOOFY N41 14.260  E042 33.579): 6XSA-2 LN / 1XFANG SONG / 1XSR
+  - SA6 (WPT DONALD N41 09.997  E043 17.287): 4XKUB LN / 1XKUB STR
 
 ## ESCENARIO REAL  OPERACION TORMENTA DE HIELO DESDE TBILISI-LOCHINI. 
  
 ### MISSION OVERVIEW 
-- Date: 8 Abril 20209
+- Date: 8 Abril 2020
 - Time: 08:00:00
 
 ### ATO: MISION 2 TORMENTA DE HIELO 2
