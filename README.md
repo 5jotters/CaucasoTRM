@@ -1,6 +1,10 @@
 # MISION 5JOTTERS ENTRENAMIENTO
 Misión en el mapa del Cáucaso para realizar diferentes entrenamientos PvP y contra IA. Posibilidad de BVR, BFM, carrier ops, empleo armamento AG. Hay 3 OPERACIONES: Instant BFM, Carrier ops, Escenario tormenta de hielo.
 
+# ESCENARIO
+
+![](https://i.imgur.com/naTM4D2.png)
+
 # FICHERO COMBAT FLITE PARA PLANEAMIENTO
 [CA_TRM.cf](https://drive.google.com/file/d/12-yHBVpB-u3U9-4328kspW8SXFkJrijx/view?usp=sharing)
 
