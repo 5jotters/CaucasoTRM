@@ -3,7 +3,7 @@ Misión en el mapa del Cáucaso para realizar diferentes entrenamientos PvP y co
 
 # ESCENARIO
 
-![](https://i.imgur.com/iVv6261.png)
+![](https://i.imgur.com/pZhjRAZ.png)
 
 # FICHERO COMBAT FLITE PARA PLANEAMIENTO
 [CA_TRM.cf](https://drive.google.com/file/d/12-yHBVpB-u3U9-4328kspW8SXFkJrijx/view?usp=sharing)
@@ -21,6 +21,9 @@ BFM contra Su27
 - MOA NORTE BATUMI, MOA SUR BATUMI en plan vuelo F18s.
 - ~~Weather, BRC, freqs, ventanas: Menú AIRBOSS-->kneeboard.~~
 - POLÍGONO REAL DE TIRO aL SUR KOBULETI: T80s, BTRs, ZSUs, URAL y estáticos. Coord: N 41º 50' 31", E 41º 47' 52" 
+
+![](https://i.imgur.com/FrnBiP4.png)
+
 - COMM PLAN: 
   - Batumi:          ATC: 131.0/260.0,  ATIS: 132.800,  NAV: TACAN BTM 16X
   - Kobuleti:        ATC: 133.0/262.0,  ATIS: 122.300,  NAV: TACAN KBL 67X
@@ -55,7 +58,7 @@ BFM contra Su27
 - DIVERT: 
   - Sochi:          ATC: 127.0 / 256.0, 
 
-  ![](https://i.imgur.com/uuE68dJ.png)
+  ![](https://i.imgur.com/d55ijga.png)
 
 ## ESCENARIO REAL  OPERACION TORMENTA DE HIELO DESDE TBILISI-LOCHINI. 
  
