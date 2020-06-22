@@ -3,7 +3,7 @@ Misión en el mapa del Cáucaso para realizar diferentes entrenamientos PvP y co
 
 # ESCENARIO
 
-![](https://i.imgur.com/naTM4D2.png)
+![](https://i.imgur.com/iVv6261.png)
 
 # FICHERO COMBAT FLITE PARA PLANEAMIENTO
 [CA_TRM.cf](https://drive.google.com/file/d/12-yHBVpB-u3U9-4328kspW8SXFkJrijx/view?usp=sharing)
@@ -53,7 +53,7 @@ BFM contra Su27
 - DIVERT: 
   - Sochi:          ATC: 127.0 / 256.0, 
 
-  ![](https://drive.google.com/file/d/1as54xRYXROd28qqOG8Lp0oKIjQDuZaEG/view?usp=sharing)
+  ![](https://i.imgur.com/uuE68dJ.png)
 
 ## ESCENARIO REAL  OPERACION TORMENTA DE HIELO DESDE TBILISI-LOCHINI. 
  
