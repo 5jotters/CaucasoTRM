@@ -53,6 +53,8 @@ BFM contra Su27
 - DIVERT: 
   - Sochi:          ATC: 127.0 / 256.0, 
 
+  ![](https://drive.google.com/file/d/1as54xRYXROd28qqOG8Lp0oKIjQDuZaEG/view?usp=sharing)
+
 ## ESCENARIO REAL  OPERACION TORMENTA DE HIELO DESDE TBILISI-LOCHINI. 
  
 ### MISSION OVERVIEW 
